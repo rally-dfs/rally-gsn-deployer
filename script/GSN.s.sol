@@ -8,7 +8,7 @@ import {StakeManager} from "gsn/src/StakeManager.sol";
 import {RelayRegistrar} from "gsn/src/utils/RelayRegistrar.sol";
 import {RelayHub} from "gsn/src/RelayHub.sol";
 import {IRelayHub} from "gsn/src/interfaces/IRelayHub.sol";
-import {RLYVerifyPaymaster} from "src/gsn/RLYVerifyPaymaster.sol";
+import {RLYVerifyPaymaster} from "src/RLYVerifyPaymaster.sol";
 
 contract GSNScript is Script {
     address constant devAddress = 0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789;
