@@ -47,6 +47,8 @@ Below are the chains and addresses of the GSN instances that the Rally Protocol 
 
 ### Rally Deployments
 
+Below are the chains and addresses that the Rally core contracts have been deployed to
+
 ### Base Sepolia
 
 | Contract Name           | Verified Contract                                                                                                                  |
