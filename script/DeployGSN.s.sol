@@ -8,7 +8,7 @@ import {StakeManager} from "gsn/src/StakeManager.sol";
 import {RelayRegistrar} from "gsn/src/utils/RelayRegistrar.sol";
 import {RelayHub} from "gsn/src/RelayHub.sol";
 import {IRelayHub} from "gsn/src/interfaces/IRelayHub.sol";
-import {IERC20} from "@openzeppelin/token/ERC20/IERC20.sol";
+import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {RLYVerifyPaymaster} from "src/RLYVerifyPaymaster.sol";
 import {TestWrappedNativeToken} from "src/tokens/TestWrappedNativeToken.sol";
 
