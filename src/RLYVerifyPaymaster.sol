@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.17;
 pragma experimental ABIEncoderV2;
 
 import {BasePaymaster} from "gsn/src/BasePaymaster.sol";
@@ -175,7 +175,9 @@ contract RLYVerifyPaymaster is BasePaymaster {
         bytes calldata signature,
         bytes calldata approvalData
     ) internal view returns (bool) {
-        bytes32 prefixedHashMessage = ECDSA.toEthSignedMessageHash(signature);
+
+        bytes32 sigHash = keccak256(signature);
+        bytes32 prefixedHashMessage = ECDSA.toEthSignedMessageHash(sigHash);
         address recoveredSigner = ECDSA.recover(
             prefixedHashMessage,
             approvalData
