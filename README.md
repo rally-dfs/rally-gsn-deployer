@@ -28,7 +28,7 @@ Below are the chains and addresses of the GSN instances that the Rally Protocol 
 
 | Contract Name   | Verified Contract                                                                                                            |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Forwarder       | 0x0ae8FC9867CB4a124d7114B8bd15C4c78C4D40E5](https://www.oklink.com/amoy/address/0x0ae8fc9867cb4a124d7114b8bd15c4c78c4d40e5)  |
+| Forwarder       | [0x0ae8FC9867CB4a124d7114B8bd15C4c78C4D40E5](https://www.oklink.com/amoy/address/0x0ae8fc9867cb4a124d7114b8bd15c4c78c4d40e5) |
 | Relay Hub       | [0xe213A20A9E6CBAfd8456f9669D8a0b9e41Cb2751](https://www.oklink.com/amoy/address/0xe213a20a9e6cbafd8456f9669d8a0b9e41cb2751) |
 | Penalizer       | [0xA073Fb6e669e584738B6612656c8f015C16bCE22](https://www.oklink.com/amoy/address/0xa073fb6e669e584738b6612656c8f015c16bce22) |
 | Stake Manager   | [0x855D2D5a7850F32E937a83Dd0eE2763d37c07fF8](https://www.oklink.com/amoy/address/0x855d2d5a7850f32e937a83dd0ee2763d37c07ff8) |
