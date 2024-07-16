@@ -40,7 +40,6 @@ contract DeployRally is Script {
         rlyPermitToken.transfer(address(permitFaucet), 1000000 ether);
         rlyExecuteMetaTxToken.transfer(address(executeMetaTxFaucet), 1000000 ether);
 
-
         console2.log("paymaster address");
         console2.logAddress(address(paymaster));
         console2.log("rly permit token address");
@@ -51,7 +50,7 @@ contract DeployRally is Script {
         console2.logAddress(address(permitFaucet));
         console2.log("rly execute meta tx faucet address");
         console2.logAddress(address(executeMetaTxFaucet));
-        
+
         vm.stopBroadcast();
 
     }

@@ -38,10 +38,10 @@ contract RegisterRelayer is Script {
         IRelayHub.RelayHubConfig memory relayConfig = relayHub.getConfiguration();
 
 
-        console2.log("getting weth...");
-        //stakingToken.deposit{value: minimumStakeForToken}();
+        stakingToken.deposit{value: minimumStakeForToken}();
+        
+        stakingToken.approve(address(stakeManager), minimumStakeForToken);
 
-        //stakingToken.approve(address(stakeManager), minimumStakeForToken);
         console2.log("setting stake...");
         stakeManager.setRelayManagerOwner(_deployerAddress);
         stakeManager.stakeForRelayManager(stakingToken, relayManager, relayConfig.minimumUnstakeDelay, minimumStakeForToken);

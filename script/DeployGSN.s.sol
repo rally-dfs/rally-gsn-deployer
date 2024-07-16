@@ -7,6 +7,8 @@ import {Penalizer} from "gsn/src/Penalizer.sol";
 import {StakeManager} from "gsn/src/StakeManager.sol";
 import {RelayRegistrar} from "gsn/src/utils/RelayRegistrar.sol";
 import {RelayHub} from "gsn/src/RelayHub.sol";
+import {ArbRelayHub} from "gsn/src/arbitrum/ArbRelayHub.sol";
+import {ArbSys} from "gsn/src/arbitrum/ArbSys.sol";
 import {IRelayHub} from "gsn/src/interfaces/IRelayHub.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {RLYVerifyPaymaster} from "src/RLYVerifyPaymaster.sol";
@@ -16,6 +18,7 @@ contract DeployGSN is Script {
 
     IERC20[] _stakingTokens;
     uint256[] _minimumStakes;
+    RelayHub relayHub;
 
     function run() public {      
 
@@ -66,13 +69,25 @@ contract DeployGSN is Script {
             baseRelayFee: uint8(vm.envUint("BASE_RELAY_FEE")),
             pctRelayFee: uint8(vm.envUint("PCT_RELAY_FEE"))
         });
-        RelayHub relayHub = new RelayHub(
+
+        if(vm.envBool("IS_ARBITRUM")){
+            relayHub = new ArbRelayHub(
+            ArbSys(vm.envAddress("ARB_SYS")),
             stakemanager,
             address(penalizer),
             address(0),
             address(relayRegistrar),
             config
         );
+        } else {
+            relayHub = new RelayHub(
+            stakemanager,
+            address(penalizer),
+            address(0),
+            address(relayRegistrar),
+            config
+        );
+        }
 
         IERC20 stakingToken; 
 
@@ -85,13 +100,10 @@ contract DeployGSN is Script {
         _stakingTokens.push(stakingToken);
         _minimumStakes.push(vm.envUint("MINIMUM_STAKE"));
 
+      
         relayHub.setMinimumStakes(_stakingTokens, _minimumStakes);
-
-
-
-
-
-
+        
+    
         console2.log("forwarder address");
         console2.logAddress(address(forwarder));
         console2.log("penalizer address");
@@ -104,9 +116,6 @@ contract DeployGSN is Script {
         console2.logAddress(address(relayHub));
         console2.log("staking token address");
         console2.logAddress(address(stakingToken));
-
-      
-
         vm.stopBroadcast();
     }
 }
