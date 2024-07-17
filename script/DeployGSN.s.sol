@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.17;
+pragma solidity ^0.8.19;
 
 import {Script, console2} from "forge-std/Script.sol";
 import {Forwarder} from "gsn/src/forwarder/Forwarder.sol";
@@ -13,6 +13,8 @@ import {IRelayHub} from "gsn/src/interfaces/IRelayHub.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {RLYVerifyPaymaster} from "src/RLYVerifyPaymaster.sol";
 import {TestWrappedNativeToken} from "src/tokens/TestWrappedNativeToken.sol";
+import {ArbSysMock} from "./arbitrum/ArbSysMock.sol";
+
 
 contract DeployGSN is Script {
 
@@ -69,10 +71,14 @@ contract DeployGSN is Script {
             baseRelayFee: uint8(vm.envUint("BASE_RELAY_FEE")),
             pctRelayFee: uint8(vm.envUint("PCT_RELAY_FEE"))
         });
+         
 
         if(vm.envBool("IS_ARBITRUM")){
+            ArbSysMock arbSysMock = new ArbSysMock();
+            vm.etch(address(100), address(arbSysMock).code);
+            ArbSys arbSys = ArbSys(address(100));  
             relayHub = new ArbRelayHub(
-            ArbSys(vm.envAddress("ARB_SYS")),
+            arbSys,
             stakemanager,
             address(penalizer),
             address(0),
