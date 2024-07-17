@@ -43,7 +43,7 @@ Below are the chains and addresses of the GSN instances that the Rally Protocol 
 | Penalizer            | [0xb383A58F83f3C40ac6A981a93fBdb91031945e7f](https://sepolia.basescan.org/address/0xb383A58F83f3C40ac6A981a93fBdb91031945e7f#code) |
 | Stake Manager        | [0xbA402ebB287539b29D73C78ea9b5bc53CD9737fD](https://sepolia.basescan.org/address/0xbA402ebB287539b29D73C78ea9b5bc53CD9737fD#code) |
 | Relay Registrar      | [0x6b3469Ef584F932A8b0AC86FCDfC8C4617d87026](https://sepolia.basescan.org/address/0x6b3469Ef584F932A8b0AC86FCDfC8C4617d87026#code) |
-| Staking Token (WETH) | [0xf1BC75Bea77a43e0a2891C694a1BA760a87C30af](https://sepolia.basescan.org/address/0x6b3469Ef584F932A8b0AC86FCDfC8C4617d87026#code) |
+| Staking Token (WETH) | [0xf1BC75Bea77a43e0a2891C694a1BA760a87C30af](https://sepolia.basescan.org/address/0xf1BC75Bea77a43e0a2891C694a1BA760a87C30af#code) |
 
 #### Arbitrum Sepolia
 
