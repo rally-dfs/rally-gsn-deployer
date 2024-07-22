@@ -32,7 +32,7 @@ contract DeployRally is Script {
 
         ERC20PermitToken rlyPermitToken = new ERC20PermitToken("RLY Permit" , "RLYpermit", 15_000_000_000 ether);
         ERC20ExecuteMetaTxToken rlyExecuteMetaTxToken = new ERC20ExecuteMetaTxToken();
-        rlyExecuteMetaTxToken.initialize("RLY Metatx", "RLYmetaTx", 18, _deployerAddress, 15_000_000_000 ether);
+        rlyExecuteMetaTxToken.initialize("RLY Metatx", "RLYmetaTx", 18, _deployerAddress, 15_000_000_000 ether);     
 
         TokenFaucet permitFaucet = new TokenFaucet(address(rlyPermitToken), 10 ether, vm.envAddress("GSN_FORWARDER"));
         TokenFaucet executeMetaTxFaucet = new TokenFaucet(address(rlyExecuteMetaTxToken), 10 ether, vm.envAddress("GSN_FORWARDER"));
