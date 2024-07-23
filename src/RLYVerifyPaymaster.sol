@@ -175,9 +175,7 @@ contract RLYVerifyPaymaster is BasePaymaster {
         bytes calldata signature,
         bytes calldata approvalData
     ) internal view returns (bool) {
-
-        bytes32 sigHash = keccak256(signature);
-        bytes32 prefixedHashMessage = ECDSA.toEthSignedMessageHash(sigHash);
+       bytes32 prefixedHashMessage = ECDSA.toEthSignedMessageHash(signature);
         address recoveredSigner = ECDSA.recover(
             prefixedHashMessage,
             approvalData
