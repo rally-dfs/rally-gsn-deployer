@@ -64,11 +64,11 @@ Below are the chains and addresses that the Rally core contracts have been deplo
 
 | Contract Name           | Verified Contract                                                                                                                  |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Paymaster               | [0x0e20E8A953a1e7D5FD4B24F12aC021b6345F364F](https://sepolia.basescan.org/address/0x0e20E8A953a1e7D5FD4B24F12aC021b6345F364F#code) |
+| Paymaster               | [0x9bf59A7924cBa2475A03AD77e92fcf1Eaddb2Cc2](https://sepolia.basescan.org/address/0x9bf59A7924cBa2475A03AD77e92fcf1Eaddb2Cc2#code) |
 | ERC20 Permit Token      | [0x846D8a5fb8a003b431b67115f809a9B9FFFe5012](https://sepolia.basescan.org/address/0x846D8a5fb8a003b431b67115f809a9B9FFFe5012#code) |
 | ERC20 Exec Metatx Token | [0x16723e9bb894EfC09449994eC5bCF5b41EE0D9b2](https://sepolia.basescan.org/address/0x16723e9bb894EfC09449994eC5bCF5b41EE0D9b2#code) |
-| ERC20 Permit Faucet     | [0x5e2a2800dc11c3884032B1E7c2882Ac68c9C35c0](https://sepolia.basescan.org/address/0x5e2a2800dc11c3884032B1E7c2882Ac68c9C35c0#code) |
-| ERC20 Metatx Faucet     | [0x1544267c4E158dFD81541fBbCcEBfCda96768A6E](https://sepolia.basescan.org/address/0x1544267c4E158dFD81541fBbCcEBfCda96768A6E#code) |
+| ERC20 Permit Faucet     | [0xFCfC511B8915D3aFD0eadc794A0c4151278fE7D1](https://sepolia.basescan.org/address/0xFCfC511B8915D3aFD0eadc794A0c4151278fE7D1#code) |
+| ERC20 Metatx Faucet     | [0xCeCFB48a9e7C0765Ed1319ee1Bc0F719a30641Ce](https://sepolia.basescan.org/address/0xCeCFB48a9e7C0765Ed1319ee1Bc0F719a30641Ce#code) |
 
 #### Arbitrum Sepolia
 

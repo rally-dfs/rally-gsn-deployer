@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 pragma experimental ABIEncoderV2;
 
 import {BasePaymaster} from "gsn/src/BasePaymaster.sol";
-import {IERC20Permit} from "@openzeppelin/contracts/token/ERC20/extensions/draft-IERC20Permit.sol";
+import {IERC20Permit} from "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {ECDSA} from "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
 import {GsnTypes} from "gsn/src/utils/GsnTypes.sol";
@@ -175,9 +175,7 @@ contract RLYVerifyPaymaster is BasePaymaster {
         bytes calldata signature,
         bytes calldata approvalData
     ) internal view returns (bool) {
-
-        bytes32 sigHash = keccak256(signature);
-        bytes32 prefixedHashMessage = ECDSA.toEthSignedMessageHash(sigHash);
+        bytes32 prefixedHashMessage = ECDSA.toEthSignedMessageHash(signature);
         address recoveredSigner = ECDSA.recover(
             prefixedHashMessage,
             approvalData

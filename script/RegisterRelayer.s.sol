@@ -39,10 +39,8 @@ contract RegisterRelayer is Script {
 
 
         stakingToken.deposit{value: minimumStakeForToken}();
-        
         stakingToken.approve(address(stakeManager), minimumStakeForToken);
 
-        console2.log("setting stake...");
         stakeManager.setRelayManagerOwner(_deployerAddress);
         stakeManager.stakeForRelayManager(stakingToken, relayManager, relayConfig.minimumUnstakeDelay, minimumStakeForToken);
         console2.log("authorizing hub...");
