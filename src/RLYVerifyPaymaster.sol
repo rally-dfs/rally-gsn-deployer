@@ -6,7 +6,6 @@ import {BasePaymaster} from "gsn/src/BasePaymaster.sol";
 import {IERC20Permit} from "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {ECDSA} from "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
-import {MessageHashUtils} from "@openzeppelin/contracts/utils/cryptography/MessageHashUtils.sol";
 import {GsnTypes} from "gsn/src/utils/GsnTypes.sol";
 import {GsnUtils} from "gsn/src/utils/GsnUtils.sol";
 import {GsnEip712Library} from "gsn/src/utils/GsnEip712Library.sol";
@@ -176,8 +175,7 @@ contract RLYVerifyPaymaster is BasePaymaster {
         bytes calldata signature,
         bytes calldata approvalData
     ) internal view returns (bool) {
-
-        bytes32 prefixedHashMessage = MessageHashUtils.toEthSignedMessageHash(signature);
+        bytes32 prefixedHashMessage = ECDSA.toEthSignedMessageHash(signature);
         address recoveredSigner = ECDSA.recover(
             prefixedHashMessage,
             approvalData

@@ -6,6 +6,9 @@ import {RLYVerifyPaymaster} from "src/RLYVerifyPaymaster.sol";
 import {ERC20ExecuteMetaTxToken} from "src/tokens/ERC20ExecuteMetaTx.sol";
 import {ERC20PermitToken} from "src/tokens/ERC20Permit.sol";
 import {TokenFaucet} from "src/TokenFaucet.sol";
+import {IPaymaster} from "gsn/src/interfaces/IPaymaster.sol";
+import {RelayHub} from "gsn/src/RelayHub.sol";
+
 
 contract DeployRally is Script {
 
@@ -28,7 +31,10 @@ contract DeployRally is Script {
         vm.startBroadcast(_deployerPrivateKey);
 
         RLYVerifyPaymaster paymaster = new RLYVerifyPaymaster();
+        RelayHub relayHub = RelayHub(vm.envAddress("RELAY_HUB_ADDRESS"));
+
         paymaster.setSigner(vm.envAddress("AUTH_SIGNER"));
+        paymaster.setRelayHub(relayHub);
 
         ERC20PermitToken rlyPermitToken = new ERC20PermitToken("RLY Permit" , "RLYpermit", 15_000_000_000 ether);
         ERC20ExecuteMetaTxToken rlyExecuteMetaTxToken = new ERC20ExecuteMetaTxToken();
