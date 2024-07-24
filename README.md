@@ -74,7 +74,7 @@ Below are the chains and addresses that the Rally core contracts have been deplo
 
 | Contract Name           | Verified Contract                                                                                                                 |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Paymaster               | [0x49d4d1A4439656DF5B2105A7076a2279e6aC18bd](https://sepolia.arbiscan.io/address/0x49d4d1A4439656DF5B2105A7076a2279e6aC18bd#code) |
+| Paymaster               | [0x758641a1b566998CaC5Bc5fC8032F001e1CEBeEf](https://sepolia.arbiscan.io/address/0x758641a1b566998CaC5Bc5fC8032F001e1CEBeEf#code) |
 | ERC20 Permit Token      | [0x0e20E8A953a1e7D5FD4B24F12aC021b6345F364F](https://sepolia.arbiscan.io/address/0x0e20E8A953a1e7D5FD4B24F12aC021b6345F364F#code) |
 | ERC20 Exec Metatx Token | [0xE23A288513BbeA9e5Cd19CE4114bf75C34D794AD](https://sepolia.arbiscan.io/address/0xE23A288513BbeA9e5Cd19CE4114bf75C34D794AD#code) |
 | ERC20 Permit Faucet     | [0x16723e9bb894EfC09449994eC5bCF5b41EE0D9b2](https://sepolia.arbiscan.io/address/0x16723e9bb894EfC09449994eC5bCF5b41EE0D9b2#code) |
