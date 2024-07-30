@@ -69,6 +69,7 @@ Below are the chains and addresses that the Rally core contracts have been deplo
 | ERC20 Exec Metatx Token | [0x16723e9bb894EfC09449994eC5bCF5b41EE0D9b2](https://sepolia.basescan.org/address/0x16723e9bb894EfC09449994eC5bCF5b41EE0D9b2#code) |
 | ERC20 Permit Faucet     | [0xFCfC511B8915D3aFD0eadc794A0c4151278fE7D1](https://sepolia.basescan.org/address/0xFCfC511B8915D3aFD0eadc794A0c4151278fE7D1#code) |
 | ERC20 Metatx Faucet     | [0xCeCFB48a9e7C0765Ed1319ee1Bc0F719a30641Ce](https://sepolia.basescan.org/address/0xCeCFB48a9e7C0765Ed1319ee1Bc0F719a30641Ce#code) |
+| TestNFT                 | [0xBe1b586eA7D09062b924b0899908B48801615013](https://sepolia.basescan.org/address/0xBe1b586eA7D09062b924b0899908B48801615013#code) |
 
 #### Arbitrum Sepolia
 
