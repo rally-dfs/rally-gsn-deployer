@@ -34,6 +34,7 @@ contract DeployRally is Script {
         RelayHub relayHub = RelayHub(vm.envAddress("RELAY_HUB_ADDRESS"));
 
         paymaster.setSigner(vm.envAddress("AUTH_SIGNER"));
+        paymaster.setTrustedForwarder(vm.envAddress("GSN_FORWARDER"));
         paymaster.setRelayHub(relayHub);
 
         ERC20PermitToken rlyPermitToken = new ERC20PermitToken("RLY Permit" , "RLYpermit", 15_000_000_000 ether);
@@ -42,6 +43,9 @@ contract DeployRally is Script {
 
         TokenFaucet permitFaucet = new TokenFaucet(address(rlyPermitToken), 10 ether, vm.envAddress("GSN_FORWARDER"));
         TokenFaucet executeMetaTxFaucet = new TokenFaucet(address(rlyExecuteMetaTxToken), 10 ether, vm.envAddress("GSN_FORWARDER"));
+
+        paymaster.setMethodOptions(address(permitFaucet), rlyPermitToken.transfer.selector, true);
+        paymaster.setMethodOptions(address(executeMetaTxFaucet), rlyExecuteMetaTxToken.executeMetaTransaction.selector, true);
 
         rlyPermitToken.transfer(address(permitFaucet), 1000000 ether);
         rlyExecuteMetaTxToken.transfer(address(executeMetaTxFaucet), 1000000 ether);

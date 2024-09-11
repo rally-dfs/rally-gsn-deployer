@@ -34,6 +34,17 @@ Below are the chains and addresses of the GSN instances that the Rally Protocol 
 | Stake Manager   | [0x855D2D5a7850F32E937a83Dd0eE2763d37c07fF8](https://www.oklink.com/amoy/address/0x855d2d5a7850f32e937a83dd0ee2763d37c07ff8) |
 | Relay Registrar | [0x701C4f4F0339d3A4cf12861E650a20fC7c8FC7de](https://www.oklink.com/amoy/address/0x701c4f4f0339d3a4cf12861e650a20fc7c8fc7de) |
 
+#### Base Mainnet
+
+| Contract Name        | Verified Contract                                                                                                                  |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Forwarder            | [0x524266345fB331cb624E27D2Cf5B61E769527FCC](https://sepolia.basescan.org/address/0x524266345fB331cb624E27D2Cf5B61E769527FCC#code) |
+| Relay Hub            | [0x01B83B33F0DD8be68627a9BE68E9e7E3c209a6b1](https://sepolia.basescan.org/address/0x01B83B33F0DD8be68627a9BE68E9e7E3c209a6b1#code) |
+| Penalizer            | [0x8B29D3251Bc1375A3dd216A70C980d6d676792fd](https://sepolia.basescan.org/address/0x8B29D3251Bc1375A3dd216A70C980d6d676792fd#code) |
+| Stake Manager        | [0x572cf3C8342A79Da85420A248dA8C3005c1aA52f](https://sepolia.basescan.org/address/0x572cf3C8342A79Da85420A248dA8C3005c1aA52f#code) |
+| Relay Registrar      | [0x713A90b371945d5e807B2f5b21733F602Fc2A79e](https://sepolia.basescan.org/address/0x713A90b371945d5e807B2f5b21733F602Fc2A79e#code) |
+| Staking Token (WETH) | [0x4200000000000000000000000000000000000006](https://sepolia.basescan.org/address/0x4200000000000000000000000000000000000006#code) |
+
 #### Base Sepolia
 
 | Contract Name        | Verified Contract                                                                                                                  |
