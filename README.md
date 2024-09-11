@@ -39,7 +39,7 @@ Below are the chains and addresses of the GSN instances that the Rally Protocol 
 | Contract Name        | Verified Contract                                                                                                          |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Forwarder            | [0x524266345fB331cb624E27D2Cf5B61E769527FCC](https://basescan.org/address/0x524266345fB331cb624E27D2Cf5B61E769527FCC#code) |
-| Relay Hub            | [0x01B83B33F0DD8be68627a9BE68E9e7E3c209a6b1](https://basescan.org/address/0x01B83B33F0DD8be68627a9BE68E9e7E3c209a6b1#code) |
+| Relay Hub            | [0x54623092d2dB00D706e0Ad4ADaCc024F9cB9E915](https://basescan.org/address/0x54623092d2dB00D706e0Ad4ADaCc024F9cB9E915#code) |
 | Penalizer            | [0x8B29D3251Bc1375A3dd216A70C980d6d676792fd](https://basescan.org/address/0x8B29D3251Bc1375A3dd216A70C980d6d676792fd#code) |
 | Stake Manager        | [0x572cf3C8342A79Da85420A248dA8C3005c1aA52f](https://basescan.org/address/0x572cf3C8342A79Da85420A248dA8C3005c1aA52f#code) |
 | Relay Registrar      | [0x713A90b371945d5e807B2f5b21733F602Fc2A79e](https://basescan.org/address/0x713A90b371945d5e807B2f5b21733F602Fc2A79e#code) |
@@ -70,6 +70,12 @@ Below are the chains and addresses of the GSN instances that the Rally Protocol 
 ### Rally Deployments
 
 Below are the chains and addresses that the Rally core contracts have been deployed to
+
+#### Base Mainnet
+
+| Contract Name | Verified Contract                                                                                                          |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Paymaster     | [0x01B83B33F0DD8be68627a9BE68E9e7E3c209a6b1](https://basescan.org/address/0x01B83B33F0DD8be68627a9BE68E9e7E3c209a6b1#code) |
 
 #### Base Sepolia
 
