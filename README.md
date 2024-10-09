@@ -101,9 +101,9 @@ Below are the chains and addresses that the Rally core contracts have been deplo
 
 #### Arbitrum Mainnet
 
-| Contract Name | Verified Contract                                                                                                          |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Paymaster     | [0x974f6DB83C5F6f4a4f75a97D43f80a0b5d058eF8](https://basescan.org/address/0x974f6DB83C5F6f4a4f75a97D43f80a0b5d058eF8#code) |
+| Contract Name | Verified Contract                                                                                                         |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Paymaster     | [0x974f6DB83C5F6f4a4f75a97D43f80a0b5d058eF8](https://arbiscan.io/address/0x974f6DB83C5F6f4a4f75a97D43f80a0b5d058eF8#code) |
 
 #### Arbitrum Sepolia
 
