@@ -56,6 +56,17 @@ Below are the chains and addresses of the GSN instances that the Rally Protocol 
 | Relay Registrar      | [0x6b3469Ef584F932A8b0AC86FCDfC8C4617d87026](https://sepolia.basescan.org/address/0x6b3469Ef584F932A8b0AC86FCDfC8C4617d87026#code) |
 | Staking Token (WETH) | [0xf1BC75Bea77a43e0a2891C694a1BA760a87C30af](https://sepolia.basescan.org/address/0xf1BC75Bea77a43e0a2891C694a1BA760a87C30af#code) |
 
+#### Arbitrum Mainnet
+
+| Contract Name        | Verified Contract                                                                                                         |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Forwarder            | [0x524266345fB331cb624E27D2Cf5B61E769527FCC](https://arbiscan.io/address/0x524266345fB331cb624E27D2Cf5B61E769527FCC#code) |
+| Relay Hub            | [0xCcF30E6fd38B292F79E0AfF3cE2FC97BD4Fc8948](https://arbiscan.io/address/0xCcF30E6fd38B292F79E0AfF3cE2FC97BD4Fc8948#code) |
+| Penalizer            | [0x8B29D3251Bc1375A3dd216A70C980d6d676792fd](https://arbiscan.io/address/0x8B29D3251Bc1375A3dd216A70C980d6d676792fd#code) |
+| Stake Manager        | [0x572cf3C8342A79Da85420A248dA8C3005c1aA52f](https://arbiscan.io/address/0x572cf3C8342A79Da85420A248dA8C3005c1aA52f#code) |
+| Relay Registrar      | [0x713A90b371945d5e807B2f5b21733F602Fc2A79e](https://arbiscan.io/address/0x713A90b371945d5e807B2f5b21733F602Fc2A79e#code) |
+| Staking Token (WETH) | [0x82aF49447D8a07e3bd95BD0d56f35241523fBab1](https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1#code) |
+
 #### Arbitrum Sepolia
 
 | Contract Name        | Verified Contract                                                                                                                 |
@@ -87,6 +98,12 @@ Below are the chains and addresses that the Rally core contracts have been deplo
 | ERC20 Permit Faucet     | [0xFCfC511B8915D3aFD0eadc794A0c4151278fE7D1](https://sepolia.basescan.org/address/0xFCfC511B8915D3aFD0eadc794A0c4151278fE7D1#code) |
 | ERC20 Metatx Faucet     | [0xCeCFB48a9e7C0765Ed1319ee1Bc0F719a30641Ce](https://sepolia.basescan.org/address/0xCeCFB48a9e7C0765Ed1319ee1Bc0F719a30641Ce#code) |
 | TestNFT                 | [0xBe1b586eA7D09062b924b0899908B48801615013](https://sepolia.basescan.org/address/0xBe1b586eA7D09062b924b0899908B48801615013#code) |
+
+#### Arbitrum Mainnet
+
+| Contract Name | Verified Contract                                                                                                          |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Paymaster     | [0x974f6DB83C5F6f4a4f75a97D43f80a0b5d058eF8](https://basescan.org/address/0x974f6DB83C5F6f4a4f75a97D43f80a0b5d058eF8#code) |
 
 #### Arbitrum Sepolia
 

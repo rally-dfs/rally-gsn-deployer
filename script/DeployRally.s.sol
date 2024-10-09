@@ -37,29 +37,34 @@ contract DeployRally is Script {
         paymaster.setTrustedForwarder(vm.envAddress("GSN_FORWARDER"));
         paymaster.setRelayHub(relayHub);
 
-        ERC20PermitToken rlyPermitToken = new ERC20PermitToken("RLY Permit" , "RLYpermit", 15_000_000_000 ether);
+        /*ERC20PermitToken rlyPermitToken = new ERC20PermitToken("RLY Permit" , "RLYpermit", 15_000_000_000 ether);
         ERC20ExecuteMetaTxToken rlyExecuteMetaTxToken = new ERC20ExecuteMetaTxToken();
         rlyExecuteMetaTxToken.initialize("RLY Metatx", "RLYmetaTx", 18, _deployerAddress, 15_000_000_000 ether);     
+
+
 
         TokenFaucet permitFaucet = new TokenFaucet(address(rlyPermitToken), 10 ether, vm.envAddress("GSN_FORWARDER"));
         TokenFaucet executeMetaTxFaucet = new TokenFaucet(address(rlyExecuteMetaTxToken), 10 ether, vm.envAddress("GSN_FORWARDER"));
 
         paymaster.setMethodOptions(address(permitFaucet), rlyPermitToken.transfer.selector, true);
-        paymaster.setMethodOptions(address(executeMetaTxFaucet), rlyExecuteMetaTxToken.executeMetaTransaction.selector, true);
+        paymaster.setMethodOptions(address(executeMetaTxFaucet), rlyExecuteMetaTxToken.executeMetaTransaction.selector, true);*/
+        /*RLYVerifyPaymaster paymaster =  RLYVerifyPaymaster(payable(0x01B83B33F0DD8be68627a9BE68E9e7E3c209a6b1));
+        ERC20PermitToken permitToken = ERC20PermitToken(0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913);
+        paymaster.setMethodOptions(0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913, permitToken.permit.selector, true);*/
 
-        rlyPermitToken.transfer(address(permitFaucet), 1000000 ether);
-        rlyExecuteMetaTxToken.transfer(address(executeMetaTxFaucet), 1000000 ether);
+        //rlyPermitToken.transfer(address(permitFaucet), 1000000 ether);
+        //rlyExecuteMetaTxToken.transfer(address(executeMetaTxFaucet), 1000000 ether);
 
         console2.log("paymaster address");
         console2.logAddress(address(paymaster));
-        console2.log("rly permit token address");
+        /*console2.log("rly permit token address");
         console2.logAddress(address(rlyPermitToken));
         console2.log("rly execute meta tx token address");
         console2.logAddress(address(rlyExecuteMetaTxToken));
         console2.log("rly permit faucet address");
         console2.logAddress(address(permitFaucet));
         console2.log("rly execute meta tx faucet address");
-        console2.logAddress(address(executeMetaTxFaucet));
+        console2.logAddress(address(executeMetaTxFaucet));*/
 
         vm.stopBroadcast();
 
